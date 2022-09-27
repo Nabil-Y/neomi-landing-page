@@ -8,6 +8,9 @@ import ReviewSection from "@/components/Layout/ReviewSection.vue";
 import ContactUs from "@/components/Layout/ContactUs.vue";
 import TheFooter from "../components/Layout/TheFooter.vue";
 import AppModal from "../components/UI/AppModal.vue";
+import { useModalStore } from "@/stores/store";
+
+const store = useModalStore();
 </script>
 
 <template>
@@ -23,7 +26,7 @@ import AppModal from "../components/UI/AppModal.vue";
     </div>
   </main>
   <TheFooter />
-  <AppModal />
+  <AppModal v-if="store.isModalVisible" />
 </template>
 
 <style scoped>
