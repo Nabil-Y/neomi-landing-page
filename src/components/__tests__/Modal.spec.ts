@@ -41,7 +41,7 @@ describe("Modal", () => {
   const store = useModalStore();
 
   it("it should be hidden first", () => {
-    expect(wrapper.getByTestId("modal").classList[0]).toBe("hidden");
+    expect(wrapper.queryByTestId("modal")).toBeNull();
     expect(document.body.classList[0]).not.toBeDefined();
   });
 
@@ -51,7 +51,7 @@ describe("Modal", () => {
     await fireEvent.click(button);
 
     expect(store.toggleModal).toHaveBeenCalledOnce();
-    expect(wrapper.getByTestId("modal").classList[0]).toBe("modal");
+    expect(wrapper.getByTestId("modal")).toBeDefined();
     expect(document.body.classList[0]).toBe("no-scroll");
   });
 
@@ -61,7 +61,7 @@ describe("Modal", () => {
     await fireEvent.click(button);
 
     expect(store.toggleModal).toHaveBeenCalledTimes(2);
-    expect(wrapper.getByTestId("modal").classList[0]).toBe("hidden");
+    expect(wrapper.queryByTestId("modal")).toBeNull();
     expect(document.body.classList[0]).not.toBeDefined();
   });
 });
