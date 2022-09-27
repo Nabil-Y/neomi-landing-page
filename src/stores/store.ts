@@ -7,7 +7,7 @@ export const useModalStore = defineStore("modal", () => {
     isModalVisible.value = !isModalVisible.value;
 
     if (typeof window === "object") {
-      document?.body.classList.toggle("no-scroll");
+      document.body.classList.toggle("no-scroll");
     }
   };
 
