@@ -9,13 +9,6 @@ import ValueBlock from "@/components/UI/ValueBlock.vue";
     :key="block.title"
     class="feature-slides-container"
   >
-    <ValueBlock
-      :title="block.title"
-      :image="block.img"
-      :alt="block.alt"
-      :html="block.html"
-      :reversed="block.reversed"
-    >
-    </ValueBlock>
+    <ValueBlock v-bind="block" />
   </section>
 </template>
