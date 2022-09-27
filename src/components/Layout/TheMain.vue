@@ -8,7 +8,7 @@ import ContactUs from "@/components/Layout/ContactUs.vue";
 </script>
 
 <template>
-  <main id="#skip-nav">
+  <main id="skip-nav">
     <HeroBanner />
     <div class="main-container">
       <TrustClient />
