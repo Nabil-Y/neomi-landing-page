@@ -3,7 +3,7 @@ import Button from "@/components/UI/AppButton.vue";
 </script>
 
 <template>
-  <div class="hero">
+  <section class="hero">
     <div class="hero-slogan">
       <h1 class="hero-title">
         Neomi, la plateforme <span class="font-orange">collaborative</span> pour
@@ -11,7 +11,7 @@ import Button from "@/components/UI/AppButton.vue";
       </h1>
       <Button>Demander une démo</Button>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
