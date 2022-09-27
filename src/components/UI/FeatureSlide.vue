@@ -16,7 +16,7 @@ defineProps<{
     </div>
 
     <div class="feature-slide-right">
-      <img :src="image" :alt="alt" />
+      <img :src="image" :alt="alt" loading="lazy" />
     </div>
   </div>
 </template>

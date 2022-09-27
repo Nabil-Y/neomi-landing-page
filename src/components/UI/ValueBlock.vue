@@ -19,7 +19,7 @@ defineProps<{
     </div>
 
     <div :class="reversed ? 'reversed' : ''">
-      <img class="value-block-img" :src="image" :alt="alt" />
+      <img class="value-block-img" :src="image" :alt="alt" loading="lazy" />
     </div>
   </div>
 </template>

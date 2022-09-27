@@ -23,7 +23,12 @@ defineProps<{
         <span class="font-bold font-orange"> {{ company }}</span>
         <div class="font-bold font-grey">{{ clientFrom }}</div>
       </div>
-      <img class="user-img" :src="image" alt="photo utilisateur" />
+      <img
+        class="user-img"
+        :src="image"
+        alt="photo utilisateur"
+        loading="lazy"
+      />
     </div>
   </div>
 </template>
