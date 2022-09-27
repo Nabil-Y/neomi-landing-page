@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #ff861d;
+  --color-primary-transparent: rgba(255, 134, 29, 0.05);
+  --color-primary-hover: #f26d1f;
+  --color-black: #1f1e21;
+  --color-white: #ffffff;
+  --color-grey: #878a93;
+  --color-grey-light: #e0e0e0;
+
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Monsterrat;
+  src: url("/static/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-black);
+  line-height: 1.5;
+  font-family: Monsterrat, sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

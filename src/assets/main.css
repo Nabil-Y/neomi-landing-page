@@ -1,0 +1,142 @@
+@import "./base.css";
+
+/* Base classes */
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 12px 0;
+  line-height: 30px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Utility classes */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.font-orange {
+  color: var(--color-primary);
+}
+
+.font-grey {
+  color: var(--color-grey);
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.separator {
+  background-color: var(--color-primary);
+  margin-top: 36px;
+  height: 4px;
+  width: 64px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Swiper Classes */
+
+.swiper {
+  margin: 32px 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+  background-color: var(--color-black);
+  opacity: 1;
+}
+
+.review-slide p {
+  line-height: normal;
+}
+
+/* Contact form bubble */
+
+.bubble1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 903px;
+  height: 903px;
+  left: 484px;
+  top: -648px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bubble2 {
+  width: 575px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  border-radius: 50%;
+  height: 575px;
+  left: -224px;
+  top: -113px;
+}
+
+.bubble3 {
+  position: absolute;
+  border-radius: 50%;
+  width: 555px;
+  height: 555px;
+  left: 608px;
+  top: 49px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.bubble4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+  left: 186px;
+  top: 24px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.bubble5 {
+  position: absolute;
+  border-radius: 50%;
+  width: 167px;
+  height: 167px;
+  left: 710px;
+  top: -29px;
+  background: rgba(255, 255, 255, 0.2);
+}
