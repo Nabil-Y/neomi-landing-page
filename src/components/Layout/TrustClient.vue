@@ -3,14 +3,14 @@ const clientAlts = ["CA CIB", "Nexity", "Bouygues Immobilier", "CA Immobilier"];
 </script>
 
 <template>
-  <div class="trust-clients">
-    <p class="trust-clients-text">
+  <section class="trust-clients">
+    <h2 class="trust-clients-title">
       <span class="font-orange"
         >Grâce à Neomi, plus de 500 professionnels de toutes tailles</span
       >
       <br />
       de la promotion immobilière optimisent leur activité
-    </p>
+    </h2>
     <ul class="trust-clients-list">
       <li v-for="i in 4" :key="i + 'client'">
         <img
@@ -20,7 +20,7 @@ const clientAlts = ["CA CIB", "Nexity", "Bouygues Immobilier", "CA Immobilier"];
         />
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <style scoped>
@@ -29,7 +29,7 @@ const clientAlts = ["CA CIB", "Nexity", "Bouygues Immobilier", "CA Immobilier"];
   margin-bottom: 16px;
 }
 
-.trust-clients-text {
+.trust-clients-title {
   font-weight: 600;
   line-height: 40px;
   font-size: 18px;
