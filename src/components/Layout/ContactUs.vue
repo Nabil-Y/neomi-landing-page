@@ -3,21 +3,23 @@ import Button from "../UI/AppButton.vue";
 </script>
 
 <template>
-  <div class="contact">
+  <section class="contact">
     <div v-for="i in 5" :key="'bubble' + i" :class="'bubble' + i"></div>
-    <div class="contact-title">
+    <h2 class="contact-title">
       En un rendez-vous, nous analysons vos besoins pour vous proposer la
       meilleure solution
-    </div>
+    </h2>
     <div class="contact-action">
+      <label for="email-field" class="sr-only">Your Email</label>
       <input
+        id="email-field"
         type="email"
         class="contact-input"
         placeholder="Votre adresse E-mail..."
       />
       <Button class="contact-button">Demander une démo</Button>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
