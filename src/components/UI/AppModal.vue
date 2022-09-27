@@ -1,27 +1,28 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, onUnmounted } from "vue";
 import { useModalStore } from "@/stores/store";
-import { storeToRefs } from "pinia";
 import Button from "./AppButton.vue";
+
 const store = useModalStore();
-const { isModalVisible } = storeToRefs(store);
 const { toggleModal } = store;
 
 onMounted(() => {
   const script = document.createElement("script");
   script.src =
     "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
+  script.id = "modal";
   script.defer = true;
   document.body.appendChild(script);
+});
+
+onUnmounted(() => {
+  const script = document.querySelector("#modal")!;
+  document.body.removeChild(script);
 });
 </script>
 
 <template>
-  <div
-    :class="!isModalVisible ? 'hidden' : 'modal'"
-    @click="toggleModal"
-    data-testid="modal"
-  >
+  <div class="modal" @click="toggleModal" data-testid="modal">
     <div class="modal-wrapper">
       <!-- Start of Meetings Embed Script -->
       <div
@@ -29,6 +30,7 @@ onMounted(() => {
         data-src="https://meetings-eu1.hubspot.com/nabil-yassine?embed=true"
       ></div>
       <!-- End of Meetings Embed Script -->
+
       <div class="modal-footer">
         <Button class="modal-button">Retour</Button>
       </div>
