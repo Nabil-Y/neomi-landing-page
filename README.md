@@ -1,6 +1,8 @@
 # neomi-clone-v1
 
-Landing page to learn / practice Vue and its ecosystem
+Landing page to practice and learn more about Vue and its ecosystem.
+
+[Demo link](https://neomi-landing-page-zxrh.vercel.app/)
 
 ## Tools used
 
